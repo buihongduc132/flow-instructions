@@ -1,0 +1,24 @@
+{
+  "name": "flow-instructions",
+  "version": "1.0.0",
+  "main": "dist/scripts/build.js",
+  "repository": "git@github.com:buihongduc132/flow-instructions.git",
+  "author": "Duc Bui <buihongduc132@yahoo.com>",
+  "license": "MIT",
+  "scripts": {
+    "concat": "tsx ./scripts/build.ts",
+    "start": "node dist/scripts/build.js",
+    "preprocess": "node dist/scripts/build.js",
+    "prepare": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.11",
+    "tsc": "^2.0.4",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
