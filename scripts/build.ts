@@ -22,70 +22,12 @@ async function buildConfiguration(confName: string, confItems: ConfItem[]): Prom
   console.log('Building configuration', { confName });
 
   // Read all files in the conf directory
-
   const fileContents = await Promise.all(
     confItems.map((item) => {
       const filePath = path.join(confDir, `${item.name}.md`);
       return fs.readFile(filePath, 'utf-8');
     })
   );
-  // const files = await fs.readdir(confDir);
-
-  // const fileInfo = await files.reduce(async (prev, file, fileIndex): Promise<string[]> => {
-  //   const prevData = await prev;
-  //   if(path.extname(file) !== '.md') return prevData;
-
-  //   const filePath = path.join(confDir, file);
-  //   console.log('Processing file', {
-  //     fileIndex,
-  //     fileName: file
-  //   });
-
-  //   const content = await fs.readFile(filePath, 'utf-8');
-
-  //   // If confItems is provided, filter or process based on items
-  //   if (confItems && confItems.length > 0) {
-  //     // Example processing: could add more complex logic here
-  //     const matchingItem = confItems.find(item =>
-  //       content.toLowerCase().includes(item.name.toLowerCase())
-  //     );
-
-  //     // return matchingItem ? content : '';
-  //     return [...prevData, {
-        
-  //     }];
-  //   }
-
-  //   return prevData;
-
-  //   // return content;
-    
-  // }, Promise.resolve<{ content, order }[]>([]))
-
-  // // Read contents of each file
-  // const fileContents = await Promise.all(
-  //   mdFiles.map(async (file, fileIndex): Promise<string> => {
-  //     const filePath = path.join(confDir, file);
-  //     console.log('Processing file', {
-  //       fileIndex,
-  //       fileName: file
-  //     });
-
-  //     const content = await fs.readFile(filePath, 'utf-8');
-
-  //     // If confItems is provided, filter or process based on items
-  //     if (confItems && confItems.length > 0) {
-  //       // Example processing: could add more complex logic here
-  //       const matchingItem = confItems.find(item =>
-  //         content.toLowerCase().includes(item.name.toLowerCase())
-  //       );
-
-  //       return matchingItem ? content : '';
-  //     }
-
-  //     return content;
-  //   })
-  // );
 
   // Concatenate file contents, filtering out empty strings
   const concatenatedContent = fileContents
