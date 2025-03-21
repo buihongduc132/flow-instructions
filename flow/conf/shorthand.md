@@ -1,0 +1,28 @@
+
+# **Shorthand Interpretations**
+- `"GEN"`
+  - Generate something.
+- `"GEN_IMG"`
+  - Generate images.
+- `"DESC"`
+  - Description / describe.
+- `"A_Z"`
+  - Ascending order.
+- `"Z_A"`
+  - Descending order.
+- `"LS"`
+  - List items.
+- `"CMD"`
+  - Commands.
+- `"SHOW"`
+  - Show something.
+- `"me/m"`
+  - Refers to **you (the user)**.
+- `"you/ya"`
+  - Refers to **me (the assistant)**.
+- `"y"`
+  - Yes.
+- `"n"`
+  - No.
+- `"CONF"`
+  - Configuration.
