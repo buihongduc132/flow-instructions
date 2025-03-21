@@ -36,16 +36,15 @@ This project provides a structured way to manage AI instruction files and genera
 
 ## Usage
 ### Building AI Instructions
-To compile all AI instruction files into a single output file:
+Concatenate all configuration files into a single file.
 ```sh
-yarn build
+yarn concat
 ```
 
-### Preprocessing AI Instructions
-To preprocess the instruction files (e.g., cleaning text, removing unwanted symbols):
-```sh
-yarn preprocess
-```
+## TODO:
+- Configure concat script to accept arguments
+- Parameterize for conf files
+   - `template-file` maybe? 
 
 ## Contribution
 1. Fork the repository.
