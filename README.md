@@ -6,20 +6,19 @@ This project provides a structured way to manage AI instruction files and genera
 ## Project Structure
 ```
 .
-├── README.md               # Project documentation
-|── flow/              # Flow instructions
-|   ├── conf/          # Configuration files
-|   ├── mem.md         # Memory management
-|   ├── mems.md        # Custom memories
-|   ├── model_params.md # Model parameter adjustments
-|   ├── overall.md     # Overall instructions
-|   ├── prefixes.md    # Prefixes and formatting
-|   ├── role_context.md # Role context management
-|   ├── shorthand.md   # Shorthand interpretations
-|   └── custom_mem.md  # Custom memory behaviors
-├── scripts/                # Directory for build scripts
-│   ├── build.ts            # Script to compile AI instructions
-└── output/                 # Generated AI instruction files
+├── README.md          # Project documentation
+|── flow/              # Flow instructions and configuration
+|   ├── conf/          # Configuration files for AI context and memory management
+|   |   ├── custom_mem.md   # Default memory configurations and abbreviations
+|   |   ├── mem.md          # Memory context management rules
+|   |   ├── model_params.md # Model parameter configurations
+|   |   ├── overral.md      # Overall configuration settings
+|   |   ├── prefixes.md     # Formatting and prefix guidelines
+|   |   ├── role_context.md # Role-specific context settings
+|   |   └── shorthand.md    # Shorthand interpretations and abbreviations
+|   └── generated/     # Automatically generated files or outputs
+└── global/            # Global project-wide rules and settings
+    └── overal.md      # Global indexing and workspace rules
 ```
 
 ## Installation

@@ -1,0 +1,15 @@
+## CMD
+These are short commands and their description on who I want to you do. 
+
+- GEN_TREE:
+  - Update readme **Project Structure** structure:
+    - You should read each files in `flow`, `global` and each files recursively, summary the intention of the file as description. 
+    - template:
+```
+.
+├── README.md          # Project documentation
+|── flow/              # Flow instructions
+|   ├── conf/          # <description>
+|   ├── mem.md         # Memory management
+|   ├── mems.md        # <description>
+```
